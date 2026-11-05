@@ -22,6 +22,7 @@ import {
   generateWaveformPoints,
 } from './services/powerQualityMath';
 import { IsometricOffice } from './components/office/IsometricOffice';
+import { OfficeAssistant } from './components/office/OfficeAssistant';
 import { EngineeringConsole } from './components/engineering/EngineeringConsole';
 import { SignalCharts } from './components/engineering/SignalCharts';
 import { ReportView } from './components/engineering/ReportView';
@@ -76,7 +77,7 @@ export default function App() {
     },
   ]);
 
-  const [allowGeminiFallback, setAllowGeminiFallback] = useState<boolean>(true);
+  const [allowGeminiFallback, setAllowGeminiFallback] = useState<boolean>(false);
 
   // Execution Stage
   const [stage, setStage] = useState<CommissionStage>('IDLE');
@@ -399,6 +400,14 @@ export default function App() {
               isApproved={report?.status === 'APPROVED'}
               onSelectZone={(zone) => setSelectedZone(zone)}
               selectedZone={selectedZone}
+            />
+
+            <OfficeAssistant
+              agents={availableAgents}
+              providers={providers}
+              dataset={selectedDataset}
+              evaluation={evaluation}
+              allowGeminiFallback={allowGeminiFallback}
             />
 
             {/* Engineering Control Console */}
