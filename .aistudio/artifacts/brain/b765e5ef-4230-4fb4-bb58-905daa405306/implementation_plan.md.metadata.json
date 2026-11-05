@@ -1,0 +1,6 @@
+{
+  "summary": "Plan de implementación final ajustado con criterios exactos de IEEE 519-2022 (Tabla 1 de distorsión de tensión en PCC para V <= 1 kV: individual max 5.0%, THDv max 8.0%), separación estricta entre Desbalance NEMA (LVUR) y Desbalance IEC (VUF), retiro de fórmulas empíricas de pérdidas, estado por defecto de borrador pendiente de revisión con aprobación manual explícita por Ariel Romero, y validación del modelo Gemini activo ('gemini-3.8-flash'). Listo para ejecución inmediata.",
+  "updatedAt": "2026-11-05T15:51:07.430355338Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

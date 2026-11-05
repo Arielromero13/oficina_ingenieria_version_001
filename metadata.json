@@ -1,0 +1,6 @@
+{
+  "name": "Oficina Virtual de Ingeniería",
+  "description": "Oficina virtual interactiva de agentes de IA para peritajes técnicos y análisis determinista de calidad de energía industrial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
